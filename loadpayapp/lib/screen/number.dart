@@ -5,18 +5,18 @@ class ConfirmPhoneNumber extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Confirm Phone Number'),
+        title: const Text('Confirm Phone Number'),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Check your message, because we sent you a code for verification',
               style: TextStyle(fontSize: 16.0),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -74,40 +74,39 @@ class ConfirmPhoneNumber extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Row(
               children: [
-                Text(
+                const Text(
                   'Haven\'t received a code?',
                   style: TextStyle(fontSize: 12.0, color: Colors.grey),
                 ),
                 TextButton(
-                  onPressed: () {}, // Handle resend code functionality
-                  child: Text(
+                  onPressed: () {},
+                  child: const Text(
                     'Resend',
                     style: TextStyle(fontSize: 12.0, color: Colors.blue),
                   ),
                 ),
               ],
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             ElevatedButton(
-              onPressed: () {}, // Handle continue button functionality
-              child: Text('Continue'),
+              onPressed: () {},
+              child: const Text('Continue'),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   'By continuing, you agree to our ',
                   style: TextStyle(fontSize: 12.0),
                 ),
                 RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     text: 'Terms of Use',
                     style: TextStyle(fontSize: 12.0, color: Colors.blue),
-                    // Add functionality to handle terms of use link tap
                   ),
                 ),
               ],

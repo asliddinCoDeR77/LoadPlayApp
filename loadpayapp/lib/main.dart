@@ -1,4 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:loadpayapp/qoshimcha/temprature.dart';
+import 'package:loadpayapp/qoshimcha/timer.dart';
+import 'package:loadpayapp/qoshimcha/todoapp.dart';
 import 'package:loadpayapp/screen/splashscreen.dart';
 
 void main() {
@@ -10,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
