@@ -60,14 +60,14 @@ class _NumberVerifyScreenState extends State<NumberVerifyScreen> {
         const Gap(20),
         Row(
           children: [
-            Padding(padding: EdgeInsets.all(13)),
+            const Padding(padding: EdgeInsets.all(13)),
             Container(
               width: 90,
               height: 60,
               decoration: BoxDecoration(
                   color: Colors.grey.shade100,
                   borderRadius: BorderRadius.circular(10)),
-              child: Center(
+              child: const Center(
                 child: Row(
                   children: [
                     Icon(
@@ -130,7 +130,7 @@ class _NumberVerifyScreenState extends State<NumberVerifyScreen> {
               const Duration(seconds: 0),
               () {
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (ctx) => ConfirmPhoneNumber()),
+                  MaterialPageRoute(builder: (ctx) => Coniformnumber()),
                 );
               },
             );

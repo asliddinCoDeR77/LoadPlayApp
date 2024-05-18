@@ -22,18 +22,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Gap(40),
+          const Gap(40),
           Row(
             children: [
-              Padding(padding: EdgeInsets.all(4)),
+              const Padding(padding: EdgeInsets.all(4)),
               Container(
                 height: 30,
                 width: 60,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.grey,
                 ),
-                child: Center(
+                child: const Center(
                   child: Icon(
                     Icons.arrow_back_ios,
                     size: 17,
@@ -67,7 +67,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           SizedBox(
             width: 360,
             child: TextField(
-              // controller: emailController,
               keyboardType: TextInputType.name,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
@@ -77,7 +76,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 labelText: "name",
                 hintText: "name",
                 focusedBorder: InputBorder.none,
-                // errorText: emailError.isNotEmpty ? emailError : null,
                 filled: true,
                 fillColor: Colors.grey.shade200,
               ),

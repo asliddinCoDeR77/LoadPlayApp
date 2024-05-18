@@ -14,7 +14,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (ctx) => const IntroduceScreen()),
+        MaterialPageRoute(builder: (ctx) {
+          return const IntroduceScreen();
+        }),
       );
     });
     return Scaffold(
